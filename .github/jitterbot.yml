@@ -1,3 +1,4 @@
 delete-merged-branch:
+  enabled: true
   exclude:
     - master
