@@ -2,3 +2,10 @@ delete-merged-branch:
   enabled: true
   exclude:
     - master
+update-jira-status:
+  enabled: true
+  statuses:
+    opened: In Review
+    approved: Pending Merge
+    merged: Dev Complete
+    closed: In Progress
