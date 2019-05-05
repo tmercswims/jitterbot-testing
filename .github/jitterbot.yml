@@ -4,4 +4,4 @@ delete-merged-branch:
     - master
 update-jira-status:
   enabled: true
-  component: Cloud Studio
+  component: jbcli
