@@ -5,7 +5,7 @@
 
 <!-- Copy/paste everything below here so that there is one per ticket included in this pull request. -->
 
-<h3>JIT-12345</h3>
+<h3><!-- TICKET NUMBER HERE (E.G. JIT-12345) --></h3>
 <details>
 <summary>Release Notes</summary>
 <!-- RELEASE NOTES GO HERE -->
