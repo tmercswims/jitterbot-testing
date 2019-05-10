@@ -6,7 +6,7 @@
 <!-- Copy/paste everything below here so that there is one per ticket included in this pull request. -->
 
 <h3>
-<!-- TICKET NUMBER HERE (E.G. JIT-12345) -->
+<!-- TICKET NUMBER GOES HERE (E.G. JIT-12345) -->
   
 </h3>
 
