@@ -2,7 +2,7 @@
 
 
 ```yaml
-# copy/paste this block for each ticket in the pull request
+# copy/paste the next three lines for each ticket in the pull request
 - ticket: 
   releaseNotes: 
   commentsForQA: 
