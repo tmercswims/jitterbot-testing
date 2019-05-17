@@ -1,0 +1,9 @@
+comment-jira-link:
+  enabled: true
+delete-merged-branch:
+  enabled: true
+  exclude:
+    - master
+update-jira-status:
+  enabled: true
+  component: jbcli
