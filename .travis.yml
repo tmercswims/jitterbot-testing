@@ -8,3 +8,8 @@ branches:
 
 script:
   - sleep 30
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
