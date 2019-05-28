@@ -4,6 +4,9 @@ delete-merged-branch:
   enabled: true
   exclude:
     - master
+merge-pull-request:
+  enabled: true
+  label: merge this
 update-jira-status:
   enabled: true
   component: jbcli
