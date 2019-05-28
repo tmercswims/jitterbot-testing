@@ -1,0 +1,10 @@
+language: minimal
+
+branches:
+  only:
+    - master
+    - /^release-.*$/
+    - /^release\/.*$/
+
+script:
+  - sleep 30
