@@ -1,12 +1,40 @@
+add-milestone:
+  enabled: true
+  create: true
+add-release-label:
+  enabled: true
+  create: true
+  color: f7c2bb
 comment-jira-link:
   enabled: true
 delete-merged-branch:
   enabled: true
   exclude:
+    - develop
     - master
+    - release/*
 merge-pull-request:
   enabled: true
-  label: merge this
+  label: ready to merge
+post-build-message:
+  enabled: true
+  channel: cloud-apps-general
+  primary: Madhavi Vemulapalli
+  app: Cloud Studio
+  environments:
+    - QA-Red
+    - QA-Green
+    - QA-Blue
+  cc:
+    - Bobby Fonacier
+    - Hamoon Pourtahmasbi
+    - Hirad Pourtahmasbi
+    - Michael Bates
+    - Manoj Chaudhary
+    - Mohsin Syed
+    - Philip Coats
+    - Rick Mehler
+    - Thomas Mercurio
 update-jira-status:
   enabled: true
   component: jbcli
