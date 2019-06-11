@@ -19,22 +19,14 @@ merge-pull-request:
 post-build-message:
   enabled: true
   channel: cloud-apps-general
-  primary: Madhavi Vemulapalli
+  primary: Thomas Mercurio
   app: Jitterbot Testing
   environments:
     - QA-Red
     - QA-Green
     - QA-Blue
   cc:
-    - Bobby Fonacier
-    - Hamoon Pourtahmasbi
     - Hirad Pourtahmasbi
-    - Michael Bates
-    - Manoj Chaudhary
-    - Mohsin Syed
-    - Philip Coats
-    - Rick Mehler
-    - Thomas Mercurio
 update-jira-status:
   enabled: true
   component: jbcli
