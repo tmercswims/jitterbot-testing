@@ -16,25 +16,20 @@ delete-merged-branch:
 merge-pull-request:
   enabled: true
   label: ready to merge
+open-backmerge-pull:
+  enabled: true
+  baseBranch: develop
 post-build-message:
   enabled: true
   channel: cloud-apps-general
-  primary: Madhavi Vemulapalli
-  app: Cloud Studio
+  primary: Thomas Mercurio
+  app: Jitterbot Testing
   environments:
     - QA-Red
     - QA-Green
     - QA-Blue
   cc:
-    - Bobby Fonacier
-    - Hamoon Pourtahmasbi
     - Hirad Pourtahmasbi
-    - Michael Bates
-    - Manoj Chaudhary
-    - Mohsin Syed
-    - Philip Coats
-    - Rick Mehler
-    - Thomas Mercurio
 update-jira-status:
   enabled: true
   component: jbcli
