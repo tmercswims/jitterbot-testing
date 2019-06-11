@@ -20,7 +20,7 @@ post-build-message:
   enabled: true
   channel: cloud-apps-general
   primary: Madhavi Vemulapalli
-  app: Cloud Studio
+  app: Jitterbot Testing
   environments:
     - QA-Red
     - QA-Green
