@@ -3,6 +3,7 @@ language: minimal
 branches:
   only:
     - master
+    - develop
     - /^release-.*$/
     - /^release\/.*$/
 
