@@ -16,6 +16,9 @@ delete-merged-branch:
 merge-pull-request:
   enabled: true
   label: ready to merge
+open-backmerge-pull:
+  enabled: true
+  baseBranch: develop
 post-build-message:
   enabled: true
   channel: cloud-apps-general
