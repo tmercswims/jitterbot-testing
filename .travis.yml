@@ -8,7 +8,7 @@ branches:
     - /^release\/.*$/
 
 script:
-  - sleep 10
+  - sleep 11
 
 notifications:
   email:
