@@ -1,0 +1,18 @@
+name: Release
+
+on:
+  release:
+    types:
+      - created
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Run
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
+        sleep 10
