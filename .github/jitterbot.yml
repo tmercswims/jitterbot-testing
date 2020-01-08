@@ -17,7 +17,7 @@ merge-pull-request:
   enabled: true
   label: ready to merge
 open-backmerge-pull:
-  enabled: false
+  enabled: true
   baseBranch: develop
 post-build-message:
   enabled: true
