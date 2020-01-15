@@ -40,3 +40,23 @@ jobs:
       run: |
         sleep 2
         echo Done.
+  job3:
+    name: Send Slack message
+    runs-on: ubuntu-latest
+    needs:
+      - job1
+      - job2
+
+    steps:
+      - name: Get tag
+        run: |
+          git_ref="${GITHUB_REF#refs/tags/}"
+          echo "::set-env name=git_ref::$git_ref"
+      - name: Send Slack message
+        uses: archive/github-actions-slack@v1
+        with:
+          slack-bot-user-oauth-access-token: ${{ secrets.SLACK_JITTERBOT_TOKEN }}
+          slack-channel: cloud-apps-ci
+          slack-message: |-
+            <@UK0HRR56K> Cloud Studio ${{ env.git_ref }} hsa been built. Please deploy from Octopus. Thank you!
+            CC <@UJN4XC89Z>
