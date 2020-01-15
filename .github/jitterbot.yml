@@ -20,7 +20,7 @@ open-backmerge-pull:
   enabled: true
   baseBranch: develop
 post-build-message:
-  enabled: true
+  enabled: false
   channel: cloud-apps-general
   primary: Thomas Mercurio
   app: Jitterbot Testing
