@@ -57,6 +57,4 @@ jobs:
         with:
           slack-bot-user-oauth-access-token: ${{ secrets.SLACK_JITTERBOT_TOKEN }}
           slack-channel: cloud-apps-ci
-          slack-message: |-
-            <@UK0HRR56K> Cloud Studio ${{ env.git_ref }} hsa been built. Please deploy from Octopus. Thank you!
-            CC <@UJN4XC89Z>
+          slack-message: "Cloud Studio ${{ env.git_ref }} has been built. Please deploy from Octopus. Thank you!"
