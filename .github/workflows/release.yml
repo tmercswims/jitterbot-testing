@@ -53,7 +53,7 @@ jobs:
           git_ref="${GITHUB_REF#refs/tags/}"
           echo "::set-env name=git_ref::$git_ref"
       - name: Send Slack message
-        uses: archive/github-actions-slack@v1
+        uses: archive/github-actions-slack@master
         with:
           slack-bot-user-oauth-access-token: ${{ secrets.SLACK_JITTERBOT_TOKEN }}
           slack-channel: cloud-apps-ci
