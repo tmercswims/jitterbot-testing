@@ -55,6 +55,8 @@ jobs:
       - name: Send Slack message
         uses: archive/github-actions-slack@master
         with:
-          slack-bot-user-oauth-access-token: ${{ secrets.SLACK_JITTERBOT_TOKEN }}
+          slack-bot-user-oauth-access-token: ${{ secrets.SLACK_JITTERBOT_USER_TOKEN }}
           slack-channel: cloud-apps-ci
-          slack-message: "Cloud Studio ${{ env.git_ref }} has been built. Please deploy from Octopus. Thank you!"
+          slack-message: |-
+            <@UK0HRR56K> Jitterbot Testing ${{ env.git_ref }} has been built. Please deploy from Octopus. Thank you!
+            CC <@UJN4XC89Z>
