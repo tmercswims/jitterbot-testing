@@ -57,6 +57,6 @@ jobs:
         with:
           slack-bot-user-oauth-access-token: ${{ secrets.SLACK_JITTERBOT_USER_TOKEN }}
           slack-channel: cloud-apps-ci
-          slack-message: |-
+          slack-text: |-
             <@UK0HRR56K> Jitterbot Testing ${{ env.git_ref }} has been built. Please deploy from Octopus. Thank you!
             CC <@UJN4XC89Z>
