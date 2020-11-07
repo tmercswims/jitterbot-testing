@@ -19,6 +19,7 @@ merge-pull-request:
 open-backmerge-pull:
   enabled: true
   baseBranch: develop
+  dynamicBaseBranch: true
 post-build-message:
   enabled: false
   channel: cloud-apps-general
