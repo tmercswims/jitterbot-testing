@@ -61,6 +61,8 @@ jobs:
           slack-bot-user-oauth-access-token: ${{ secrets.SLACK_JITTERBOT_USER_TOKEN }}
           slack-channel: CSSJPN9TQ
           slack-text: |-
-            <@UK0HRR56K> Jitterbot Testing ${{ env.git_ref }} has been built. Please deploy from Octopus.
-            <https://jitterbit.atlassian.net/issues/?jql=%22Fixed%20in%20build%20version%5BLabels%5D%22%20%3D%20%22${{ env.git_ref }}%22%20AND%20component%20%3D%20%22Cloud%20Studio%22|Tickets in this release.>
+            <@UK0HRR56K> Jitterbot Testing ${{ env.git_ref }} has been built and the Octopus release has been created. Please deploy.
+              • <https://jitterbit.atlassian.net/issues/?jql=%22Fixed%20in%20build%20version%5BLabels%5D%22%20%3D%20%22${{ env.git_ref }}%22%20AND%20component%20%3D%20%22Cloud%20Studio%22|Jira tickets.>
+              • <https://deploy.jitterbit.us/app#/projects/kubernetes-cloud-studio/deployments/releases/${{ env.git_ref }}|Octopus release.>
+              • <https://github.com/tmercswims/jitterbot-testing/releases/tag/${{ env.git_ref }}|Git tag.>
             CC <@UJN4XC89Z>
