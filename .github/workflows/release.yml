@@ -51,7 +51,10 @@ jobs:
       - name: Get tag
         run: |
           git_ref="${GITHUB_REF#refs/tags/}"
-          echo "::set-env name=git_ref::$git_ref"
+          echo "git_ref=$git_ref" >> $GITHUB_ENV
+      - name: Debug git tag
+        run: |
+          echo "git_ref: $git_ref"
       - name: Send Slack message
         uses: archive/github-actions-slack@master
         with:
