@@ -62,5 +62,5 @@ jobs:
           slack-channel: CSSJPN9TQ
           slack-text: |-
             <@UK0HRR56K> Jitterbot Testing ${{ env.git_ref }} has been built. Please deploy from Octopus.
-            <https://jitterbit.atlassian.net/issues/?jql=cf%5B10700%5D%20%3D%20%22${{ env.git_ref }}%22%20AND%20component%20%3D%20%22Cloud%20Studio%22|Tickets in this release.>
+            <https://jitterbit.atlassian.net/issues/?jql=%22Fixed%20in%20build%20version%5BLabels%5D%22%20%3D%20%22${{ env.git_ref }}%22%20AND%20component%20%3D%20%22Cloud%20Studio%22|Tickets in this release.>
             CC <@UJN4XC89Z>
