@@ -34,3 +34,5 @@ post-build-message:
 update-jira-status:
   enabled: true
   component: Jitterbot
+  componentMap:
+    jitterbot: Jitterbot
