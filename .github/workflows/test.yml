@@ -5,4 +5,6 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-      - run: cat /etc/resolv.conf
+      - run: |
+          cat /etc/resolv.conf
+          resolvectl status
