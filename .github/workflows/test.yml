@@ -6,8 +6,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
+          echo "------ cat"
           cat /etc/resolv.conf
+          echo "------ resolv status"
           resolvectl status
+          echo "------ docker status"
           systemctl status docker
-          systemctl restart docker
+          echo "------ docker restart"
+          sudo systemctl restart docker
+          echo "------ docker status"
           systemctl status docker
